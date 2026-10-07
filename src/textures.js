@@ -95,7 +95,7 @@ function text(ctx, style, str, x, baseline, align = "left") {
 }
 
 function drawIdentity(ctx) {
-  text(ctx, TYPE.name, "Beyond the Interface", PAD, 311);
+  text(ctx, TYPE.name, "Ajeet Kumar", PAD, 311);
   text(ctx, TYPE.role, "Design Engineer", PAD, 333);
 }
 
@@ -104,7 +104,7 @@ export function makeCoverTexture() {
   const ctx = makeCtx();
   drawShell(ctx, "left", false);
   drawLogo(ctx);
-  text(ctx, TYPE.handle, "@Charlo-O", CARD_W - PAD, 32, "right");
+  text(ctx, TYPE.handle, "Ajeet Kumar", CARD_W - PAD, 32, "right");
   drawIdentity(ctx);
   return ctx.canvas;
 }
@@ -131,12 +131,12 @@ export function makeInsideRightTexture() {
   const ctx = makeCtx();
   drawShell(ctx, "left", true);
   drawLogo(ctx);
-  text(ctx, TYPE.handle, "@Charlo-O", CARD_W - PAD, 32, "right");
+  text(ctx, TYPE.handle, "Ajeet Kumar", CARD_W - PAD, 32, "right");
   const rows = [
-    ["Web", "www.charlo.cn"],
-    ["GitHub", "Charlo-O"],
-    ["XHS", "@界面之外"],
-    ["LinkedIn", "Charlo-O"],
+    ["Web", "www.ajeet.live"],
+    ["GitHub", "Ajeet-kumar-07"],
+    ["Instagram", "azeet_0"],
+    ["LinkedIn", "AjeetKumar"],
   ];
   rows.forEach(([label, value], i) => {
     const y = 136 + i * 22;
@@ -148,8 +148,8 @@ export function makeInsideRightTexture() {
 }
 
 export async function loadFonts() {
-  const sample = "Beyond the Interface Design Engineer Creating with code. Small details matter.";
-  const mono = "@Charlo-O he/him Web GitHub XHS LinkedIn www.charlo.cn @界面之外";
+  const sample = "Ajeet Kumar Software Engineer Creating with code. Small details matter.";
+  const mono = "Ajeet Kumar he/him Web GitHub XHS LinkedIn www.ajeet.live ";
   await Promise.race([
     Promise.all([
       document.fonts.load(`400 14px ${SANS}`, sample),

@@ -1,10 +1,9 @@
-# Business Card — open/close interaction
+# Ajeet Kumar — Interactive Business Card
 
-A WebGL replica of Chánh Đại (@ncdai)'s folded business-card interaction:
-the card opens 0–180° around its center hinge like a foldable phone display.
-Each half stays rigid and flat while the glass darkens at grazing angles and
-the texture blurs while in motion. Fully open, the two halves form one
-seamless landscape card.
+A WebGL interactive business card for Ajeet Kumar. The card opens 0–180°
+around its center hinge like a foldable phone display. Each half stays rigid
+and flat while the glass darkens at grazing angles and the texture blurs while
+in motion. Fully open, the two halves form one seamless landscape card.
 
 ## Run
 
@@ -12,6 +11,16 @@ seamless landscape card.
 npm install
 npm run dev
 ```
+
+## Deploy to GitHub Pages
+
+The project is configured for the `Ajeet-kumar-07/ajeetduo` repository. Push to
+`main` and the GitHub Actions workflow builds and deploys the site to GitHub
+Pages automatically.
+
+In the repository settings, open **Pages**, select **GitHub Actions** as the
+source, and then visit:
+`https://Ajeet-kumar-07.github.io/ajeetduo/`
 
 ## Controls
 
@@ -28,7 +37,7 @@ npm run dev
   fragment shader picks front/back texture via `gl_FrontFacing`, applies
   foldable-display glass shading at grazing angles, velocity-driven texture
   blur (`uBlur`), and a rounded-rect mask with a small hinge overlap.
-- `src/textures.js` — canvas-drawn card faces (logo/avatar cropped from the
-  reference video in `public/`); spine edges carry no border stroke.
+- `src/textures.js` — canvas-drawn card faces using the assets in `public/`;
+  spine edges carry no border stroke.
 - `src/main.js` — scene, camera, drag + slider input, GSAP snap, and the
   flip-velocity → `uBlur` coupling.

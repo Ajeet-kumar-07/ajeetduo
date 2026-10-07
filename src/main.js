@@ -208,7 +208,7 @@ function tick() {
 
 async function init() {
   await loadFonts();
-  const avatar = await loadImage("/avatar@2x.png");
+  const avatar = await loadImage(`${import.meta.env.BASE_URL}avatar@2x.png`);
   card = makeCard({
     cover: makeCoverTexture(),
     insideLeft: makeInsideLeftTexture(avatar),

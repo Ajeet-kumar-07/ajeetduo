@@ -3,7 +3,7 @@
 ## Color
 - Paper white: `#fafafa`–`#ffffff` card on near-white page `#f7f7f5`
 - Ink: near-black `#111`–`#1a1a1a` (borders, primary text, slider fill)
-- Muted gray text: `#8a8a8a` (`@ncda1`, "Design Engineer", "he/him", link labels)
+- Muted gray text: `#8a8a8a` ("Ajeet Kumar", "Design Engineer", "he/him", link labels)
 - Strategy: Restrained, monochrome foldable-display aesthetic
 
 ## Typography
